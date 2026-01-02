@@ -71,7 +71,12 @@ const Layout = () => {
     {
       key: '/provider-services',
       icon: <ToolOutlined />,
-      label: <span className="font-semibold">Dịch Vụ Nhà Cung Cấp</span>,
+      label: <span className="font-semibold">Dịch Vụ Đã Đăng Ký</span>,
+    },
+    {
+      key: '/service-providers',
+      icon: <ShopOutlined />,
+      label: <span className="font-semibold">Nhà Cung Cấp Dịch Vụ</span>,
     },
     {
       key: '/bookings',

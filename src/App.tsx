@@ -26,6 +26,10 @@ import UpdateCategory from './pages/system/UpdateCategory';
 import ProviderServiceManagement from './pages/provider/ProviderServiceManagement';
 import AddProviderService from './pages/provider/AddProviderService';
 import UpdateProviderService from './pages/provider/UpdateProviderService';
+// Service Provider (Business) Management
+import ServiceProviderManagement from './pages/system/ServiceProviderManagement';
+import AddServiceProvider from './pages/system/AddServiceProvider';
+import UpdateServiceProvider from './pages/system/UpdateServiceProvider';
 
 import { authService } from './services/authService';
 import { setNotificationApi } from './services/notificationService';
@@ -97,6 +101,10 @@ function AppContent() {
           <Route path="provider-services" element={<ProviderServiceManagement />} />
           <Route path="provider-services/add" element={<AddProviderService />} />
           <Route path="provider-services/update" element={<UpdateProviderService />} />
+          {/* Service Provider (Business) Management */}
+          <Route path="service-providers" element={<ServiceProviderManagement />} />
+          <Route path="service-providers/add" element={<AddServiceProvider />} />
+          <Route path="service-providers/update/:id" element={<UpdateServiceProvider />} />
           {/* Policy Management */}
           <Route path="policies" element={<PolicyManagement />} />
           <Route path="policies/add" element={<AddPolicy />} />
